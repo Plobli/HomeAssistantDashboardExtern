@@ -2,6 +2,8 @@
 
 Ein leichtgewichtiges Web-Dashboard zur externen Anzeige von Sensorwerten aus Home Assistant. Entwickelt für Informationsdisplays, Statusmonitore oder öffentliche Bildschirme.
 
+![screenshot-website](https://github.com/Plobli/HomeAssistantDashboardExtern/blob/main/screenshot.png)
+
 ## Funktionen
 
 - Anzeige beliebiger `sensor.*` und `binary_sensor.*` aus Home Assistant
