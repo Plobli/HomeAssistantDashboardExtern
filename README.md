@@ -30,12 +30,12 @@ Ein leichtgewichtiges Web-Dashboard zur externen Anzeige von Sensorwerten aus Ho
 
 3. **Konfigurationsdatei anpassen**
 
-   Öffne `config.json` und trage deine Daten ein:
+   Öffne `config.json` und trage deine Daten ein. Beispiel:
 
    ```json
    {
-     "host": "deine-home-assistant-domain.de",
-     "token": "dein-home-assistant-token",
+     "host": "HOME-ASSISTANT-URL-HIER-EINTRAGEN",
+     "token": "HOME-ASSISTANT-TOKEN-HIER-EINTRAGEN",
      "sensors": [
        {
          "name": "Bewegungsmelder EG",
@@ -49,10 +49,22 @@ Ein leichtgewichtiges Web-Dashboard zur externen Anzeige von Sensorwerten aus Ho
      ]
    }
    ```
-
    Wichtig: Der Host muss ohne `https://` angegeben werden. Nur der reine Domainname.
 
-4. **Domain für CORS in Home Assistant freigeben**
+   ## Home Assistant Token erstellen
+
+   Für den Zugriff auf die Sensorwerte wird ein sogenannter Long-Lived Access Token benötigt:
+   
+   1. Melde dich in Home Assistant an.
+   2. Gehe in dein Profil (Benutzerkonto).
+   3. Scrolle nach unten zum Abschnitt "Long-Lived Access Tokens".
+   4. Erstelle ein neues Token.
+   5. Füge diesen Token in die Datei `config.json` ein.
+   
+   Weitere Informationen:  
+   https://www.home-assistant.io/docs/authentication/#long-lived-access-token
+
+5. **Domain für CORS in Home Assistant freigeben**
 
    Damit dein Webserver auf die Home Assistant API zugreifen darf, muss die Domain explizit freigegeben werden.
 
@@ -64,33 +76,12 @@ Ein leichtgewichtiges Web-Dashboard zur externen Anzeige von Sensorwerten aus Ho
        - https://dein-dashboard-domain.de
    ```
 
-   Beispiel:
-
-   ```yaml
-   http:
-     cors_allowed_origins:
-       - https://dashboard.meinedomain.de
-   ```
-
    Dokumentation:  
    https://www.home-assistant.io/integrations/http/#cors_allowed_origins
 
-5. **Home Assistant neu starten**
+6. **Home Assistant neu starten**
 
    Änderungen an der `configuration.yaml` erfordern einen Neustart von Home Assistant.
-
-## Home Assistant Token erstellen
-
-Für den Zugriff auf die Sensorwerte wird ein sogenannter Long-Lived Access Token benötigt:
-
-1. Melde dich in Home Assistant an.
-2. Gehe in dein Profil (Benutzerkonto).
-3. Scrolle nach unten zum Abschnitt "Long-Lived Access Tokens".
-4. Erstelle ein neues Token.
-5. Füge diesen Token in die Datei `config.json` ein.
-
-Weitere Informationen:  
-https://www.home-assistant.io/docs/authentication/#long-lived-access-token
 
 ## Sicherheitshinweis
 
