@@ -15,7 +15,7 @@ Ein leichtgewichtiges Web-Dashboard zur externen Anzeige von Sensorwerten aus Ho
 
 - Webserver mit PHP-Unterstützung (z. B. Apache oder Nginx)
 - HTTPS-fähige Domain
-- Zugriff auf eine eigene Home Assistant Instanz
+- Externer Zugriff auf eine eigene Home Assistant Instanz über Domain
 - Ein gültiger Home Assistant Long-Lived Access Token
 
 ## Installation
@@ -52,6 +52,8 @@ Ein leichtgewichtiges Web-Dashboard zur externen Anzeige von Sensorwerten aus Ho
    }
    ```
    Wichtig: Der Host muss ohne `https://` angegeben werden. Nur der reine Domainname.
+
+   Es können beliebig viele Sensoren angezeigt werden.
 
    **Home Assistant Token erstellen**
 
