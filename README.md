@@ -51,7 +51,7 @@ Ein leichtgewichtiges Web-Dashboard zur externen Anzeige von Sensorwerten aus Ho
    ```
    Wichtig: Der Host muss ohne `https://` angegeben werden. Nur der reine Domainname.
 
-   ## Home Assistant Token erstellen
+   **Home Assistant Token erstellen**
 
    Für den Zugriff auf die Sensorwerte wird ein sogenannter Long-Lived Access Token benötigt:
    
