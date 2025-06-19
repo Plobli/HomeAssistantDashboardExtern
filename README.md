@@ -89,7 +89,7 @@ Ein leichtgewichtiges Web-Dashboard zur externen Anzeige von Sensorwerten aus Ho
 
 ## Sicherheitshinweis
 
-Die Datei `config.json` enthält sensible Informationen (Token, Sensoren). Stelle sicher, dass diese Datei nicht öffentlich im Web zugänglich ist. Du kannst dies z. B. durch eine `.htaccess`-Regel oder durch Verlagerung außerhalb des Webroots erreichen.
+Die Datei `config.json` enthält sensible Informationen (Token). Stelle sicher, dass diese Datei nicht öffentlich im Web zugänglich ist. Du kannst dies z. B. durch eine `.htaccess`-Regel oder durch Verlagerung außerhalb des Webroots erreichen.
 
 ## Lizenz
 
