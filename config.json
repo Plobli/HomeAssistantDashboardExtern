@@ -1,0 +1,20 @@
+{
+    "host": "HOME-ASSISTANT-URL-HIER-EINTRAGEN",
+    "token": "HOME-ASSISTANT-TOKEN-HIER-EINTRAGEN",
+    "sensors": [
+        {
+            "name": "BINARY-SENSOR-NAME",
+            "entity_id": "binary_sensor.xyz"
+        },
+        {
+            "name": "SENSOR-NAME",
+            "entity_id": "sensor.xyz",
+            "unit": "EINHEIT"
+        },
+        {
+            "name": "SENSOR-NAME",
+            "entity_id": "sensor.xyz",
+            "unit": "EINHEIT"
+        }
+    ]
+}
